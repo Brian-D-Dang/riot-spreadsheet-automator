@@ -1,0 +1,82 @@
+MatchDto > MetadataDto
+- dataVersion
+- matchId
+- participants
+
+MatchDto > InfoDto 
+- gameDuration
+- gameMode
+- game Type
+- gameVersion
+- mapId
+- queueId
+
+MatchDto > InfoDto > ParticipantDto
+- champLevel
+- champExperience
+- championName
+- championId
+- deaths
+- kills
+- assists
+- goldEarned
+- goldSpent
+- individualPosition
+- item0
+- item1
+- item2
+- item3
+- item4
+- item5
+- item6
+- lane
+- neutralMinionsKilled
+- objectivesStolen
+- participantId
+- riotIdGameName
+- riotIdTagline
+- role
+- totalDamageDealt
+- totalDamageDealtToChampions
+- totalDamageShieldedOnTeammates
+- totalDamageTaken
+- totalHealsOnTeammates
+- totalMinionsKilled
+- totalTimeCCDealt
+- teamId
+- teamPosition
+- turrentKills
+- visionScore
+- visionWardsBoughtInGame
+- wardsPlaced
+- wardsKilled
+- win
+
+MatchDto > InfoDto > ParticipantDto > PerksDto > PerkStatsDto
+- defense
+- flex
+- offense
+
+MatchDto > InfoDto > ParticipantDto > PerksDto > PerkStyleDto
+- style
+
+MatchDto > InfoDto > ParticipantDto > PerksDto > PerkStyleDto > PerkStyleSelectionDto
+- perk
+
+MatchDto > InfoDto > TeamDto
+- teamId
+- win
+
+MatchDto > InfoDto > TeamDto > BanDto
+- championId
+
+MatchDto > InfoDto > TeamDto > ObjectivesDto
+- baron
+- champion
+- dragon
+- horde
+- inhibitor
+- riftHerald
+- tower
+
+
