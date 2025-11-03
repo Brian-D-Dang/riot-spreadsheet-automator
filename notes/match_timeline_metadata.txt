@@ -1,0 +1,50 @@
+retrieve the user puuid and set it here
+
+MatchDto > InfoDto > ParticipantDto
+
+TimelineDto > MetadatTimeLineaDto
+- dataVersion
+- matchId
+- participants
+
+TimelineDto > InfoTimeLineDto
+- endOfGameResult
+- gameId
+- frameInterval
+
+TimelineDto > InfoTimeLineDto > List[ParticipantTimeLineDto]
+- participantId
+- puuid
+
+TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto]
+- timestamp
+
+TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto] > List[EventsTimeLineDto]
+- timestamp
+- realTimestamp
+- type
+
+TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto] > ParticipantFramesDto > Dict[ParticipantFrameDto]
+- currentGold
+- goldPerSecond
+- jungleMinionsKilled
+- level
+- jungleMinionsKilled
+- participantId
+- totalGold
+- xp
+
+TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto] > ParticipantFramesDto > Dict[ParticipantFrameDto] > PositionDto
+- x
+- y
+
+
+
+
+ChampionStatsDto
+DamageStatsDto
+
+
+
+
+
