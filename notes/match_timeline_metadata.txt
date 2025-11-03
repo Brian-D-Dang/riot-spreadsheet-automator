@@ -1,15 +1,11 @@
 retrieve the user puuid and set it here
 
-MatchDto > InfoDto > ParticipantDto
-
 TimelineDto > MetadatTimeLineaDto
 - dataVersion
 - matchId
-- participants
 
 TimelineDto > InfoTimeLineDto
 - endOfGameResult
-- gameId
 - frameInterval
 
 TimelineDto > InfoTimeLineDto > List[ParticipantTimeLineDto]
@@ -27,12 +23,17 @@ TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto] > List[EventsTimeLineDto
 TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto] > ParticipantFramesDto > Dict[ParticipantFrameDto]
 - currentGold
 - goldPerSecond
-- jungleMinionsKilled
 - level
 - jungleMinionsKilled
 - participantId
 - totalGold
 - xp
+
+TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto] > ParticipantFramesDto > Dict[ParticipantFrameDto] > ChampionStatsDto
+- health
+- healthMax
+- power
+- powerMax
 
 TimelineDto > InfoTimeLineDto > List[FramesTimeLineDto] > ParticipantFramesDto > Dict[ParticipantFrameDto] > PositionDto
 - x
