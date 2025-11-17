@@ -6,3 +6,4 @@ pygsheets
 requests
 pandas
 tqdm
+pyarrow
